@@ -6,7 +6,7 @@ Demo is given in the pages `testDirectPayment.php` and `testExpressCheckout.php`
 
 For Use simply configure the merchant details in the page `PaymentGateway/PaypalAbstract.php` then
 
-For `DirectPayment` 
+<b>For DirectPayment</b>
 
 1. Set the return urls and create a `DirectPayment` object which takes the amount as the param. 
    `$Paypal = new DirectPayment(23);`
@@ -18,10 +18,11 @@ For `DirectPayment`
    `setCardType("VISA")`   
    `setExpDate("MMYYYY")`
 
-3. `doPayment()` will return the parsed paypal response as an array.
+3. Set the optional billing information. Then the method 
+`doPayment()` will return the parsed paypal response as an array.
 
  
- For `ExpressCheckout` 
+<b>For ExpressCheckout</b>
  
 1. Set the Expresscheckout by
         
@@ -35,5 +36,7 @@ For `DirectPayment`
        `$Paypal = new ExpressCheckout($amount);//Amount`
        
        `$response = $Paypal->DoExpressCheckoutPayment($_REQUEST);`
-       
-TODO : Implement <b>Paypal Parallel Payments Using Express Checkout</b> and <b>Recurring payment</b>
+
+<b>NOTE:</b> For lesser versions of php remove the namespaces and use it.
+
+<b>TODO:</b> Implement <b>Paypal Parallel Payments Using Express Checkout</b> and <b>Recurring payment</b>
