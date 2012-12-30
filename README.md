@@ -33,6 +33,7 @@ For `DirectPayment`
 
 
        `$Paypal = new ExpressCheckout($amount);//Amount`
-       `response = $Paypal->DoExpressCheckoutPayment($_REQUEST);`
+       
+       `$response = $Paypal->DoExpressCheckoutPayment($_REQUEST);`
        
 TODO : Implement <b>Paypal Parallel Payments Using Express Checkout</b> and <b>Recurring payment</b>
