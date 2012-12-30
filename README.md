@@ -37,6 +37,6 @@ For Use simply configure the merchant details in the page `PaymentGateway/Paypal
        
        `$response = $Paypal->DoExpressCheckoutPayment($_REQUEST);`
 
-<b>NOTE:</b> For lesser versions of php remove the namespaces and use it.
+<b>NOTE:</b> For lesser versions of php remove the namespaces before using.
 
 <b>TODO:</b> Implement <b>Paypal Parallel Payments Using Express Checkout</b> and <b>Recurring payment</b>
