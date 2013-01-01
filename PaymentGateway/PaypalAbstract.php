@@ -43,8 +43,8 @@ abstract class PaypalAbstract {
 
     private function setAmount($amount){
 
-        if(!is_float($amount) && !is_int($amount)){
-            throw new Exception("Amount given in invalid! Only integer and float values are acccepted!");
+        if(!is_numeric($amount)){
+            throw new Exception("Amount given in invalid! Only numeric values are acccepted!");
         }
         $this->amount = $amount;
     }
