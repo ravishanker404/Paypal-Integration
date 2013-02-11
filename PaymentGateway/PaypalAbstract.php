@@ -122,7 +122,7 @@ abstract class PaypalAbstract {
         $postVal['USER'] = self::USER_NAME;
         $postVal['PWD'] = self::PWD;
         $postVal['SIGNATURE'] = self::SIGNATURE;
-        $postVal['AMT'] = $this->getAmount();
+        $postVal['PAYMENTREQUEST_0_AMT'] = $this->getAmount();
         
         return http_build_query($postVal);
     }
